@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    padding: 50px 0;
+}
+
+.back_photo {
+    background: url('img/Group\ 152.jpg') 50%/cover no-repeat; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    filter: blur(3px);
+    background-clip: content-box;
+    padding: 0;
+    border: 0;
+}
+
+.back_photo2 {
+    background: url('img/Group\ 152.jpg') 50%/cover no-repeat; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -2;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    background: url('img/Group\ 152.jpg') 50%/cover no-repeat fixed;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 35px 0;
+    box-shadow: 0px 0px 8px 2px rgba(0, 3, 5, 0.8);
+}
+
+.container > h1, .container > h3 {
+    text-transform: uppercase;
+    background: linear-gradient(127deg, rgba(142,23,23,0.7) 0%, rgba(255,201,0,0.7) 100%);
+    letter-spacing: 3px;
+    padding: 25px 20px;
+    max-width: 500px;
+    margin: 15px auto;
+    border-radius: 3px;
+}
+
+.about_city {
+    text-transform: uppercase;
+    background: linear-gradient(127deg, rgba(142,23,23,0.7) 0%, rgba(255,201,0,0.7) 100%);
+    letter-spacing: 3px;
+    padding: 25px 20px;
+    max-width: 500px;
+    margin: 0 auto 15px auto;
+    border-radius: 3px; 
+}
+
+.container > h1 {
+    margin: 0 auto 15px;
+
+}
+
+.photo {
+    max-width: 500px;
+    height: 400px;
+    background: url('img/рнд.jpg') 50%/cover no-repeat;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.history {
+display: flex;
+justify-content: center;
+max-width: 1200px;
+margin: 30px auto;
+flex-wrap: wrap;
+}
+
+.history_photo {
+    width: 500px;
+    height: 300px;
+    background: url('img/Depositphotos_308391.jpg')50%/cover no-repeat;
+    margin-right: 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1009px) {
+   .history_photo {
+    margin: 0 0 10px 0;
+}
+}
+
+.history_text {
+width: 500px;
+font-size: 18px;
+text-align: left;
+background-color: rgba(228, 114, 1, 0.7);
+padding: 1rem;
+border-radius: 3px;
+}
+
+.history_text > p {
+    margin: 0;
+}
+
+.photo_city {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo_city_all {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.photo_city_1 {
+        background: url('img/1.jpeg') 50%/cover no-repeat;   
+}
+.photo_city_2 {
+    background: url('img/9.jpeg') 50%/cover no-repeat;
+}
+.photo_city_3 {
+    background: url('img/4.jpg') 50%/cover no-repeat;
+    margin: 10px;
+}
+.photo_city_4 {
+    background: url('img/5.jpg') 50%/cover no-repeat;
+}
+.photo_city_5 {
+    background: url('img/6.jpg') 50%/cover no-repeat;
+}
+.photo_city_6 {
+    background: url('img/7.jpeg') 50%/cover no-repeat;
+}
+
+
+.photo_city_all:hover,
+.history_photo:hover,
+.photo:hover {
+transform: scale(1.5);
+box-shadow: 0px 0px 8px 2px rgba(0, 3, 5, 0.8);
+}
+
+.button {
+margin: 0 auto;
+text-transform: uppercase;
+background: linear-gradient(127deg, rgba(142,23,23,1) 0%, rgba(255,201,0,1) 100%);
+font-size: large;
+font-weight: 700;
+letter-spacing: 3px;
+padding: 25px 20px;
+max-width: 300px;
+border-radius: 3px; 
+}
+
+.button:hover {
+    cursor: pointer;
+
+}
+
+
+
+.button {
+     animation: animation-heart-beat 1s linear 0s infinite normal;
+      
+  
+      transform-origin: center;
+    }
+
+    
+    @keyframes animation-heart-beat {
+      0%, 20%, 70% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(1.02);
+      }
+      42% {
+        transform: scale(1.05);
+      }
+    }
+    
+
